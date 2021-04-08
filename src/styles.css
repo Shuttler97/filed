@@ -21,6 +21,7 @@
 --unnamed-font-family-roboto: Roboto;
 --unnamed-font-style-normal: normal;
 --unnamed-font-weight-normal: normal;
+--unnamed-font-weight-bold: bold;
 --unnamed-font-size-14: 14px;
 --unnamed-font-size-16: 16px;
 --unnamed-font-size-18: 18px;
@@ -118,19 +119,19 @@ color: var(--unnamed-color-000000);
 .d-lg-block {
     display: block!important;
 }
-/* .d-none{
+.d-lg-none {
     display: none!important;
-} */
+}
 }
 /* =================
      mobile-view
 ================= */
 @media (max-width: 992px){
-    .d-lg-none {
-        display: none!important;
-    }
-    .d-block{
+     .d-block{
         display: block!important;
+    }
+    .d-none{
+        display: none!important;
     }
     }
 
@@ -140,7 +141,7 @@ color: var(--unnamed-color-000000);
         display: block;
     }
 .content-area{
-    margin-top:54px
+    padding: 54px 174px
 }
 .content-area .heading h1{
 margin-top: 80px;
@@ -204,5 +205,50 @@ opacity: 1;
     box-shadow: 4px 4px #eee;
     border-radius: 50%;
     top: -561px;
+    z-index:-1
     
+}
+.board{
+background: var(--unnamed-color-fbfbfb) 0% 0% no-repeat padding-box;
+background: #FBFBFB 0% 0% no-repeat padding-box;
+box-shadow: 0px 4px 20px #00000029;
+border-radius: 30px;
+opacity: 1;
+height: 724px;
+text-align: center;
+}
+.form-area{
+    margin-top: 130px;
+    text-align: center;
+    position: relative;
+
+}
+.form-area .image{
+    position: absolute;
+    top:-46px;
+    right:-46px;
+    z-index:-1
+}
+.form-area .header h2{
+padding-top:109px ;
+font: var(--unnamed-font-style-bold) normal bold var(--unnamed-font-size-34)/var(--unnamed-line-spacing-41) var(--unnamed-font-family-roboto);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-000000);
+text-align: center;
+font-size: 34px;
+font-style: var(--unnamed-font-family-roboto);
+font-weight: bold;
+line-height: 41px;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+.form-area .sub-header p{
+    padding-top: 53px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-000000);
+text-align: center;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
 }
